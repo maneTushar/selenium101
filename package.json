@@ -1,0 +1,26 @@
+{
+  "name": "seleniumjs01",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test:simple": "node tests/simpleFormTest.js",
+    "test:dragdrop": "node tests/dragDropTest.js",
+    "test:inputform": "node tests/inputFormTest.js",
+    "test:parallel": "npm-run-all --parallel test:simple test:dragdrop test:inputform"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "chromedriver": "^131.0.4",
+    "geckodriver": "^5.0.0",
+    "selenium-webdriver": "^4.27.0"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
+  }
+}
