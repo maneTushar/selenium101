@@ -1,0 +1,16 @@
+image:
+  file: gitpod/workspace-full
+
+# Commands that will run on workspace start
+tasks:
+    - name: Setup, Install & Build
+      before: npm install -g express  # Install express globally using npm
+      init: npm install               # Install dependencies using npm
+      command: npm run test:parallel          # Run the build command (you can replace it with your actual build command)
+
+# Ports to expose on workspace startup
+ports:
+    - port: 3000
+      onOpen: open-preview
+      name: Website
+      description: Website Preview
