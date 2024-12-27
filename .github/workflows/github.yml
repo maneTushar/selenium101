@@ -26,5 +26,5 @@ jobs:
         npm install -g npm  # Ensure npm is up to date
         npm install         # Install project dependencies
 
-    - name: Run Playwright tests
+    - name: Run selenium tests
       run: npm run test:parallel  # Run the tests
