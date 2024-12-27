@@ -9,7 +9,7 @@ const capabilities = {
         username: 'tushar54mane',
         accessKey: 'EQFrwGyeViIegkLbgAybbRAjHtA4EyBVhbAIZzF7w4lqeW26uJ',
         build: 'Selenium 101 Assignment',
-        name: 'LambdaTest Execution',
+        name: 'Selenium 101 Assignment',
         network: true,
         console: true,
         video: true,
