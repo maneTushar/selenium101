@@ -6,10 +6,13 @@
     "test": "tests"
   },
   "scripts": {
-    "test:simple": "node tests/simpleFormTest.js",
-    "test:dragdrop": "node tests/dragDropTest.js",
-    "test:inputform": "node tests/inputFormTest.js",
-    "test:parallel": "npm-run-all --parallel test:simple test:dragdrop test:inputform"
+    "test:simple": "node tests/simpleFormTest.js chrome",
+    "test:dragdrop": "node tests/dragDropTest.js chrome",
+    "test:inputform": "node tests/inputFormTest.js chrome",
+    "test:simple:firefox": "node tests/simpleFormTest.js firefox",
+    "test:dragdrop:firefox": "node tests/dragDropTest.js firefox",
+    "test:inputform:firefox": "node tests/inputFormTest.js firefox",
+    "test:parallel": "npm-run-all --parallel test:simple test:dragdrop test:inputform test:simple:firefox test:dragdrop:firefox test:inputform:firefox"
   },
   "keywords": [],
   "author": "",

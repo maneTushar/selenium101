@@ -19,7 +19,7 @@ class DragDropPage {
       currentX += stepSize;
       const actions = await this.driver.actions();
       await actions
-        .move({ origin: sliderHandle })
+        .move({ origin: slider })
         .press()
         .move({
           x: parseInt(currentX),
